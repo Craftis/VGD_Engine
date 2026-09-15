@@ -20,9 +20,13 @@ menuBackground.height = canvas.height;
 gameStates[`menu`] = function () {
   // Hover & click
   if (startButton.overlap(mouse)) {
-    if (mouse.pressed) { gameStates.changeState(`level1`); sounds.play(`bgm`,0, loop = true);}
+    if (mouse.pressed) { 
+      gameStates.changeState(`level1`); 
+      sounds.play(`bgm`,0, loop = true);
+    }
     startButton.img.src = "images/Sprite-buttonON.png";
-  } else {
+  } 
+  else {
     startButton.img.src = "images/Sprite-buttonOFF.png";
   }
 

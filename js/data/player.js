@@ -66,15 +66,25 @@ var playerData = {
         { width: 32, height: 32, startX: 32, startY: 128 },
         { width: 32, height: 32, startX: 64, startY: 128 }
       ]
-    },
-    // projectile
-    projectile: {
+    }
+
+    //insert projectile code
+  }
+};
+
+var projectileData = {
+  info: {
+    src: `images/Sprite-projectile.png` // ← replace with your asset, e.g., 'images/hero.png'
+  },
+  states: {
+    // idle
+    idle: {
       fps: 5, cycle: true,
       frames: [
-        { width: 32, height: 32, startX: 0, startY:  160 },
-        { width: 32, height: 32, startX: 32, startY: 160 },
-        { width: 32, height: 32, startX: 64, startY: 160 },
-        { width: 32, height: 32, startX: 96, startY: 160 }
+        { width: 32, height: 32, startX: 0, startY:  0 },
+        { width: 32, height: 32, startX: 32, startY: 0 },
+        { width: 32, height: 32, startX: 64, startY: 0 },
+        { width: 32, height: 32, startX: 96, startY: 0 }
       ]
     }
   }

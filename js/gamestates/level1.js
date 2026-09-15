@@ -91,9 +91,9 @@ var shotDelay = 60;
 var currentBullet = 0;
 
 for (let i = 0; i < 100; i++) {
-  bullets[i] = new GameObject({ width: 64, height: 64 }).makeSprite(playerData);
+  bullets[i] = new GameObject({ width: 64, height: 64 }).makeSprite(projectileData);
   bullets[i].y = -10000;
-  bullets[i].changeState(`projectile`);
+  bullets[i].changeState(`idle`);
 }
 
 gameStates[`level1`] = function () {
@@ -171,9 +171,9 @@ gameStates[`level1`] = function () {
   // --- Render order ---
   // Patterns
   var groundPattern = context.createPattern(ground.img, `repeat`);
-  var platPattern = context.createPattern(plat.img, `repeat`);
-  ground.color = groundPattern; 
-  plat.color = platPattern;
+  var platPattern   = context.createPattern(plat.img, `repeat`);
+  ground.color      = groundPattern; 
+  plat.color        = platPattern;
 
   var skyPattern = context.createPattern(sky.img, `repeat`);
   sky.color = skyPattern;
