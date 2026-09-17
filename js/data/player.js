@@ -67,14 +67,12 @@ var playerData = {
         { width: 32, height: 32, startX: 64, startY: 128 }
       ]
     }
-
-    //insert projectile code
   }
 };
 
 var projectileData = {
   info: {
-    src: `images/Sprite-projectile.png` // ← replace with your asset, e.g., 'images/hero.png'
+    src: `images/Sprite-projectile.png` // ← replace with your asset, e.g., 'images/projectile.png'
   },
   states: {
     // idle
